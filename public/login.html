@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawFeed | Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-paw"></i>
+                    <span>PawFeed</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./feed.html">Feed</a></li>
+                    <li><a href="./petprofile.html">Profile</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="./login.html" class="btn btn-outline" id="loginBtn">Login</a>
+                    <a href="./signup.html" class="btn btn-outline" id="signupBtn">Sign Up</a>
+                    <a href="./petprofile.html" class="btn btn-outline" id="profileBtn"
+                        style="display:none;">Profile</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Authentication Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <p>Welcome back! Log in to share your pet’s latest adventures 🐾</p>
+            </div>
+
+            <div class="auth-container">
+                <div class="form-container">
+                    <form id="loginForm" class="auth-form active">
+                        <div class="form-group">
+                            <label for="loginEmail">Email</label>
+                            <input type="email" id="loginEmail" class="form-control" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword">Password</label>
+                            <input type="password" id="loginPassword" class="form-control"
+                                placeholder="Enter your password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                        <a href="signup.html" class="btn btn-primary" style="width:100%; margin-top:10px;">
+                            Create Account
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-paw"></i> PawFeed
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+                <p class="copyright">&copy; 2025 PawFeed Community. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
