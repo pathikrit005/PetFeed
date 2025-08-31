@@ -1,5 +1,5 @@
 // -------------------- HELPERS --------------------
-const apiBase = "http://localhost:5000";
+const apiBase = "https://petfeed.onrender.com";
 
 // Reusable Fetch wrapper
 async function apiRequest(endpoint, method = "GET", body = null) {
