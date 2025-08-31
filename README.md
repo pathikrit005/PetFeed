@@ -55,17 +55,26 @@ node server.js
 Open index.html in your browser for the frontend.
 
 📂 Project Structure
-PetFeed/
-│── Backend/           # Node.js + Express server
-│   ├── server.js
-│   ├── models/
-│   ├── routes/
-│   └── ...
-│── Frontend/          # HTML, CSS, JS
+
+PAW FEED/
+│
+├── node_modules/          # Installed dependencies (should be ignored in GitHub)
+│
+├── public/                # Frontend HTML, CSS, JS files
+│   ├── feed.html
 │   ├── index.html
+│   ├── login.html
+│   ├── petprofile.html
+│   ├── signup.html
 │   ├── style.css
 │   └── script.js
-│── README.md          # Project documentation
+│
+├── .env                   # Environment variables (MongoDB URI, secrets)
+├── package.json           # Project dependencies & scripts
+├── package-lock.json      # Exact versions of dependencies
+├── README.md              # Project documentation
+└── server.js              # Backend server (Node.js + Express + MongoDB)
+
 
 🚀 Deployment
 
