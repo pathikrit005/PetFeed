@@ -131,7 +131,7 @@ document.getElementById("postForm")?.addEventListener("submit", async (e) => {
     post.innerHTML = `
       <div class="post-content">
         <div class="post-header">
-          <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+          <img src="https://plus.unsplash.com/premium_photo-1726880485802-3352330f3205?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User" class="user-avatar">
           <div class="post-meta">
             <div class="post-username">@pet_person</div>
             <div class="post-date">just now</div>
