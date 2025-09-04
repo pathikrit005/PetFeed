@@ -57,23 +57,24 @@ Open index.html in your browser for the frontend.
 📂 Project Structure
 
 PAW FEED/
+│── Backend/
+│   │── .env                # Environment variables (MONGO_URI, PORT, etc.)
+│   │── server.js           # Express + MongoDB server
 │
-├── node_modules/          # Installed dependencies (should be ignored in GitHub)
 │
-├── public/                # Frontend HTML, CSS, JS files
-│   ├── feed.html
-│   ├── index.html
-│   ├── login.html
-│   ├── petprofile.html
-│   ├── signup.html
-│   ├── style.css
-│   └── script.js
+│── Frontend/
+│   │── index.html          # Homepage
+│   │── signup.html         # Signup page
+│   │── login.html          # Login page
+│   │── feed.html           # Feed page
+│   │── petprofile.html     # Pet profile page
+│   │── script.js           # Frontend JS
+│   │── style.css           # Styles
 │
-├── .env                   # Environment variables (MongoDB URI, secrets)
-├── package.json           # Project dependencies & scripts
-├── package-lock.json      # Exact versions of dependencies
-├── README.md              # Project documentation
-└── server.js              # Backend server (Node.js + Express + MongoDB)
+│── node_modules/           # Installed dependencies (auto-created by npm)
+│── package.json            # Dependencies + scripts
+│── package-lock.json       # Dependency lock file
+│── README.md               # Project documentation
 
 
 🚀 Deployment
