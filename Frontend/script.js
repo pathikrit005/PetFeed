@@ -1,5 +1,5 @@
 // -------------------- HELPERS --------------------
-const apiBase = "https://petfeed.onrender.com";
+const apiBase = "http://localhost:5000";
 
 // Reusable Fetch wrapper
 async function apiRequest(endpoint, method = "GET", body = null) {
@@ -38,7 +38,7 @@ function updateAuthUI() {
         e.preventDefault();
         localStorage.removeItem("userId");
         alert("😿Logged out!");
-        window.location.href = "./index.html";
+        window.location.href = "index.html";
       };
     }
   } else {
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (onProfile) {
     if (!userId) {
       // not logged in → redirect
-      window.location.href = "./login.html";
+      window.location.href = "login.html";
     } else {
       // logged in → show profile section
       if (profileBtn) profileBtn.style.display = "block";
@@ -70,25 +70,22 @@ document.addEventListener("DOMContentLoaded", () => {
 // -------------------- SIGNUP --------------------
 document.getElementById("signupForm")?.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const name = signupName.value,
-    email = signupEmail.value,
-    password = signupPassword.value;
+  const name = signupName.value, email = signupEmail.value, password = signupPassword.value;
 
   const data = await apiRequest("/signup", "POST", { name, email, password });
   alert("😻 Signup successful! Please login now.🐶");
-  window.location.href = "./index.html";
+  window.location.href = "index.html";
 });
 
 // -------------------- LOGIN --------------------
 document.getElementById("loginForm")?.addEventListener("submit", async (e) => {
   e.preventDefault();
-  const email = loginEmail.value,
-    password = loginPassword.value;
+  const email = loginEmail.value, password = loginPassword.value;
 
   const data = await apiRequest("/login", "POST", { email, password });
   alert("😻🐶 Login successful! ✅");
   localStorage.setItem("userId", data.userId);
-  window.location.href = "./petprofile.html";
+  window.location.href = "petprofile.html";
 });
 
 // -------------------- PET PROFILE --------------------
@@ -114,7 +111,7 @@ document.getElementById("petForm")?.addEventListener("submit", async (e) => {
 document.getElementById("postForm")?.addEventListener("submit", async (e) => {
   e.preventDefault();
   const userId = localStorage.getItem("userId");
-  if (!userId) return (window.location.href = "./login.html");
+  if (!userId) return (window.location.href = "login.html");
 
   const content = postContent.value.trim();
   if (!content) return alert("❌ Post cannot be empty!");
@@ -165,3 +162,4 @@ function attachLikeHandler(button) {
 }
 // Attach to existing posts
 document.querySelectorAll(".like-btn").forEach(attachLikeHandler);
+
