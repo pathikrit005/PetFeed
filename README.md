@@ -1,22 +1,22 @@
-🐾 PetFeed
+>>> PetFeed >>>
 
 PetFeed is a community platform for pet lovers to share posts, connect, and explore pet-related content. Built with HTML, CSS, JavaScript (frontend) and Node.js + Express + MongoDB (backend).
 
-✨ Features
+# Features
 
-🔐 User Authentication (Signup/Login with MongoDB)
+> User Authentication (Signup/Login with MongoDB)
 
-🐶 Create Posts about your pets
+> Create Posts about your pets
 
-📌 Save posts in MongoDB database
+> Save posts in MongoDB database
 
-❤️ Like system (frontend logic implemented)
+> Like system (frontend logic implemented)
 
-🏠 Home feed with posts
+> Home feed with posts
 
-👤 Profile redirection (login required)
+> Profile redirection (login required)
 
-🛠️ Tech Stack
+# Tech Stack
 
 Frontend: HTML, CSS, JavaScript
 
@@ -26,7 +26,7 @@ Database: MongoDB
 
 Version Control: Git + GitHub
 
-⚙️ Installation
+# Installation
 
 Clone the repository:
 
@@ -54,7 +54,7 @@ node server.js
 
 Open index.html in your browser for the frontend.
 
-📂 Project Structure
+# Project Structure
 
 PAW FEED/
 │── Backend/
@@ -77,13 +77,13 @@ PAW FEED/
 │── README.md               # Project documentation
 
 
-🚀 Deployment
+# Deployment
 
 You can deploy the backend on Render/Heroku/Vercel
 
 Frontend can be hosted on GitHub Pages/Netlify/Vercel
 
-👨‍💻 Author
+# Author
 
 Pathikrit Koner – BCA Student
 Ankush Khan - BCA Student
