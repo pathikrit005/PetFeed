@@ -1,20 +1,29 @@
 {
-  "name": "backend",
+  "name": "paw-feed",
   "version": "1.0.0",
-  "main": "backend/server.js",
+  "main": "Backend/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node backend/server.js"
+    "start": "node Backend/server.js",
+    "dev": "nodemon Backend/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.6.1",
+    "express": "^4.21.2",
+    "mongoose": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pathikrit005/PetFeed.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.2",
-    "express": "^5.1.0",
-    "mongoose": "^8.18.0",
-    "path": "^0.12.7"
-  }
+  "bugs": {
+    "url": "https://github.com/pathikrit005/PetFeed/issues"
+  },
+  "homepage": "https://github.com/pathikrit005/PetFeed#readme",
+  "description": "Paw Feed - Pet social platform"
 }
