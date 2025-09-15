@@ -1,4 +1,4 @@
->>> PetFeed >>>
+>>> PawFeed >>>
 
 PetFeed is a community platform for pet lovers to share posts, connect, and explore pet-related content. Built with HTML, CSS, JavaScript (frontend) and Node.js + Express + MongoDB (backend).
 
