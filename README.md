@@ -79,8 +79,7 @@ PAW FEED/
 
 # Deployment
 
-Render Link: https://github.com/pathikrit005
-
+Render Link: https://petfeed.onrender.com/
 # Author
 
 Pathikrit Koner – BCA Student
