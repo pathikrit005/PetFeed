@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawFeed | Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-paw"></i>
+                    <span>PawFeed</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="feed.html">Feed</a></li>
+                    <li><a href="petprofile.html">Profile</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline" id="loginBtn">Login</a>
+                    <a href="signup.html" class="btn btn-outline" id="signupBtn">Sign Up</a>
+                    <a href="petprofile.html" class="btn btn-outline" id="profileBtn"
+                        style="display:none;">Profile</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Profiles Section -->
+    <section class="section">
+        <div class="container">
+
+            <div class="profile-container">
+
+                <!-- Pet Profile Column -->
+                <div class="profile-column">
+                    <div class="section-title">
+                        <h2>Pet Profile</h2>
+                        <p>Showcase your furry friend to the community</p>
+                    </div>
+
+                    <div class="pet-profile">
+                        <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=662&q=80"
+                            alt="Pet" class="pet-avatar">
+
+                        <div class="pet-details">
+                            <h3 class="pet-name">Leo</h3>
+                            <p class="pet-type">Golden Retriever</p>
+
+                            <div class="detail-item">
+                                <span class="detail-label">Breed:</span>
+                                <span class="detail-value">Golden Retriever</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Age:</span>
+                                <span class="detail-value">3 years</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Favorite Toy:</span>
+                                <span class="detail-value">Tennis Ball</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Personality:</span>
+                                <span class="detail-value">Friendly, Playful</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="petForm" enctype="multipart/form-data" class="form-container"
+                        style="max-width:500px;margin:2rem auto;">
+                        <div class="form-group"><label>Name</label><input id="inputPetName" class="form-control"
+                                type="text" required></div>
+                        <div class="form-group"><label>Type</label><input id="inputPetType" class="form-control"
+                                type="text"required></div>
+                        <div class="form-group"><label>Breed</label><input id="inputPetBreed" class="form-control"
+                                type="text" required></div>
+                        <div class="form-group"><label>Age</label><input id="inputPetAge" class="form-control"
+                                type="text" required></div>
+                        <div class="form-group"><label>Favorite Toy</label><input id="inputPetToy" class="form-control"
+                                type="text" required>
+                        </div>
+                        <div class="form-group"><label>Personality</label><input id="inputPetPersonality"
+                                class="form-control" type="text" required></div>
+                        <div class="form-group"><label>Photo</label><input id="inputPetPhoto" class="form-control"
+                                type="file" accept="image/*"></div>
+                        <button class="btn btn-primary" type="submit" style="width:100%;">Save Pet Profile</button>
+                    </form>
+                </div>
+
+                <!-- Owner Profile Column -->
+                <div class="profile-column">
+                    <div class="section-title">
+                        <h2>Owner Profile</h2>
+                        <p>Introduce yourself to the community</p>
+                    </div>
+
+                    <div class="owner-profile">
+                        <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Owner" class="pet-avatar">
+                        <div class="pet-details">
+                            <h3 class="pet-name">@furry_frnd</h3>
+                            <div class="detail-item">
+                                <span class="detail-label">Email:</span>
+                                <span class="detail-value">furry_frnd@gmail.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end profile-container -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-paw"></i> PawFeed
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+                <p class="copyright">&copy; 2025 PawFeed Community. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
