@@ -79,9 +79,7 @@ PAW FEED/
 
 # Deployment
 
-You can deploy the backend on Render/Heroku/Vercel
-
-Frontend can be hosted on GitHub Pages/Netlify/Vercel
+Render Link: https://github.com/pathikrit005
 
 # Author
 
